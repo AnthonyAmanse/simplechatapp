@@ -1,0 +1,51 @@
+
+<html>
+<head>
+  <title>Simple Chat</title>
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.12.0.js"></script>
+  <script src="js/pubnub.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Simple Chat App</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- main content -->
+<div class="container">
+    <div class="chat-header">
+        <h3>Chat Box</h3>
+    </div>
+</div>
+<div class="container">
+    <div class="chat-box">
+        <p id="anotherDemo"></p>
+    </div>
+</div>
+
+
+<!-- footer -->
+<footer class="footer">
+<form onsubmit="return publishFunction();" class="my-form">
+     <input id="nameInput" type="text" placeholder="Name">
+     <input id="textInput" type="text" placeholder="Your message here" style="width: 500px;">
+    <input type="submit" value="Submit">
+</form>
+</footer>
+
+
+</body>
+</html>
