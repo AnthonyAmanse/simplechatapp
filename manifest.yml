@@ -1,0 +1,5 @@
+---
+applications:
+ - name: simplechat
+   host: simplechat
+   memory: 256M
